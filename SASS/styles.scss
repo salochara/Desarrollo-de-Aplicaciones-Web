@@ -97,3 +97,27 @@ button{
 	}
 }
 
+// Para el media query
+@media(min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),(min-width: 768px) and (min-resolution:192dpi)
+{
+	body
+	{
+		@include borde(20px);
+		color: gray;
+	}
+}
+
+// Para mixin
+$desktop-width : 1024px;
+@mixin desktop{
+	@media (min-width: #{$desktop-width}){
+		@content; // aquí se copia todo lo que escribes en el @include desktop
+	}
+}
+// Todo lo que se escriba en @include desktop, se copia a @content... bonito en mixin!
+@include desktop{
+	#logo{
+		background-color: yellow;
+	}
+}
+
