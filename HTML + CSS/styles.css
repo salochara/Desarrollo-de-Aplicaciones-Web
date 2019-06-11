@@ -1,5 +1,5 @@
 .landing {
-  height: 100vh;
+  height: 98vh;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/ralph-darabos-1287229-unsplash.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9,6 +9,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+}
+.landing h3 {
+  width: 70%;
 }
 
 p {
@@ -16,13 +21,9 @@ p {
   color: white;
 }
 
-h3 {
-  font-family: "Permanent Marker", cursive;
-  color: white;
-}
-
 .products-section {
-  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .product {
@@ -36,7 +37,7 @@ h3 {
   font-family: "Permanent Marker", cursive;
 }
 .product.img-container {
-  width: 100%;
+  width: 135px;
   height: 100%;
   object-fit: cover;
 }
@@ -52,8 +53,22 @@ h3 {
 }
 
 .contact-section {
+  background-color: #e6e6e6;
   display: flex;
-  flex: 0 1 50%;
+  flex: 1 1 0;
+  font-family: "Permanent Marker", cursive;
+}
+.contact-section p {
+  color: #000;
+  font-family: monospace;
+}
+
+.content-container {
+  margin-left: 5rem;
+}
+
+.img-cotainer-contact {
+  width: 30%;
 }
 
 /*# sourceMappingURL=styles.css.map */
