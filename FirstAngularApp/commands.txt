@@ -1,0 +1,7 @@
+Para empezar un proyecto con angular
+
+// Tener el cli de angular instalado
+sudo npm install -g @angular/cli
+ng --version
+
+
