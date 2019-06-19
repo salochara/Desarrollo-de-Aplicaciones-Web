@@ -8,10 +8,12 @@ import { AlumnosService} from '../services/alumnos.service';
   providers: [AlumnosService]
 })
 export class AlumnosComponent implements OnInit {
+  alumnos;
 
-  constructor() { }
+  constructor(alumnosServiceInstance: AlumnosService) {
+    this.alumnos = alumnosServiceInstance.getAlumnos();
+  }
 
   ngOnInit() {
   }
-
 }
