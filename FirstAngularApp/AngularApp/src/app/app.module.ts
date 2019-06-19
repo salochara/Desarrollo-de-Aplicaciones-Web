@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TituloComponent } from './titulo/titulo.component';
 import { Titulo2Component } from './titulo2/titulo2.component';
+import { AlumnosComponent } from './alumnos/alumnos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TituloComponent,
-    Titulo2Component
+    Titulo2Component,
+    AlumnosComponent
   ],
   imports: [
     BrowserModule

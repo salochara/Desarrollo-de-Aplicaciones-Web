@@ -31,4 +31,15 @@ ng g c titulo2
 </titulo>
 
 // Para generar servicios
-ng g s alumnos
+mkdir src/services
+ng g s services/alumnos
+
+// genero un componente que utilize el servicio
+ng g c alumnos
+// y en alumno.component.ts, declaro en providers que voy a usar ese servicio
+@Component({
+  selector: 'app-alumnos',
+  templateUrl: './alumnos.component.html',
+  styleUrls: ['./alumnos.component.scss'],
+  providers: [AlumnosService] // <<-----esto
+})
