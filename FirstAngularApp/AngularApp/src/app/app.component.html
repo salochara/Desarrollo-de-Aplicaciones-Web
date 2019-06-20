@@ -1,31 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container" style="text-align: center">
-  <div style="text-align:center">
-    <h1>
-      Welcome to {{ title }} !
-    </h1>
 
-    <h2>
-      Rendereando {{ instanciaAlumno.nombre}}
-    </h2>
-  </div>
-  <!--Se pueden jalar variables de el componente para renderearlo en ciertos casos-->
-  <!--          Este le diClick es un evento declarado en el app.component.ts (click) es el evento que esta escuhando. Es un eventListener en JS-->
-  <button type="button" class="btn" [class.btn-danger]="calificacion < 60" [class.btn-primary]="calificacion >= 60"
-          (click)="leDiClick($event)">Botón
-  </button>
+<app-navbar>
+</app-navbar>
 
-  <!--Va a renderear el titulo component, con su html y scss-->
-  <titulo>
 
-  </titulo>
-
-  <titulo2>
-
-  </titulo2>
-
-  <app-alumnos>
-
-  </app-alumnos>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
 
+<app-footer>
+</app-footer>
