@@ -9,3 +9,18 @@ npm install -g @loopback/cli
 lb4 --version  
 lb4 app 
 -- Seguir con el wizard de loopback
+
+// Generar un endpoint 
+lb4 controller hola   
+
+// En el hola.controller.ts creado 
+import {get} from '@loopback/openapi-v3';
+
+export class HolaController {
+constructor() {}
+@get('/hola')
+hola():string {
+return 'Hola banda'
+    }
+}
+
